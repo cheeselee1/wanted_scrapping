@@ -9,7 +9,7 @@ def wanted_find(keyword):
     driver.get(base_url)
     results=[]
     if response.status_code != 200:
-        print("Can't response")
+        print("Can't respond")
     else : 
         soup = BeautifulSoup(driver.page_source, "html.parser")
         job_lists = soup.find_all("div", class_="List_List_container__JnQMS")
